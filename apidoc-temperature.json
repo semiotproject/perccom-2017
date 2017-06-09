@@ -1,0 +1,34 @@
+
+
+{
+  "@context": [
+    "https://w3id.org/semiot/device/commoncontext#",
+    {
+      "doc": "http://goo.gl/perccom-2017-temperature#"
+    }
+  ],
+  "@id": "doc:ApiDocumentation",
+  "@type": "ApiDocumentation",
+  "supportedClass": [
+    {
+      "@id": "doc:TemperatureDevice",
+      "subClassOf": "Device",
+      "supportedProperty": {
+        "property": "label",
+        "writable": "false",
+        "label": "Label"
+      }
+    },
+    {
+      "@id": "doc:TemperatureValue",
+      "subClassOf": "quantityKind:ThermodynamicTemperature",
+      "subClassOf": "QuantitativeValue",
+      "label": "Temperature (C)"
+    },
+    {
+      "@id": "doc:temperature",
+      "@type": "Link",
+      "range": "doc:TemperatureValue"
+    }
+  ]
+}

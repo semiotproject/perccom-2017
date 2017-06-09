@@ -4,7 +4,7 @@
   "@context": [
     "https://w3id.org/semiot/device/commoncontext#",
     {
-      "doc": "http://goo.gl/perccom-2017-temperature#"
+      "doc": "https://raw.githubusercontent.com/semiotproject/perccom-2017/master/apidoc-temperature.json#"
     }
   ],
   "@id": "doc:ApiDocumentation",

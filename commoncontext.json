@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/hydra/core#",
+    "http://schema.org/",
+    {
+      "ssn": "http://purl.oclc.org/NET/ssnx/ssn#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "quantityKind": "http://qudt.org/vocab/quantitykind/",
+
+      "Device": "ssn:Device",
+      "label": "rdfs:label",
+      "subClassOf": "rdfs:subClassOf"
+      "range": "rdfs:range"
+      "identifier": "dcterms:identifier"
+    }
+  ]
+}

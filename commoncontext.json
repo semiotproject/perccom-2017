@@ -10,8 +10,8 @@
 
       "Device": "ssn:Device",
       "label": "rdfs:label",
-      "subClassOf": "rdfs:subClassOf"
-      "range": "rdfs:range"
+      "subClassOf": "rdfs:subClassOf",
+      "range": "rdfs:range",
       "identifier": "dcterms:identifier"
     }
   ]

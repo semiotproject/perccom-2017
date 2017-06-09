@@ -1,0 +1,51 @@
+{
+  "@context": [
+    "https://w3id.org/semiot/device/commoncontext#",
+    { "doc": "http://external/doc#" }
+  ],
+  "@id": "doc:ApiDocumentation",
+  "@type": "ApiDocumentation",
+  "supportedClass": [
+    {
+      "@id": "doc:RelayDevice",
+      "subClassOf": "Device",
+      "supportedProperty": [{
+        "property": "location",
+        "writable": "true",
+        "label": { "@value": "Location", "@language": "en" }
+      },
+      {
+        "property": "label",
+        "writable": "false",
+        "label": { "@value": "Label", "@language": "en" }
+      }]
+    },
+    {
+      "@id": "doc:relayAction",
+      "@type": "Link",
+      "range": "ControlAction",
+      "supportedOperation": [{
+        "method": "GET",
+        "returns": "ControlAction"
+      },
+      {
+        "method": "PUT",
+        "expects": "doc:TurnOnAction"
+      },
+      {
+        "method": "PUT",
+        "expects": "doc:TurnOffAction"
+      }]
+    },
+    {
+      "@id": "doc:TurnOnAction",
+      "subClassOf": "ControlAction",
+      "label": { "@value": "Turn on", "@language": "en" },
+    },
+    {
+      "@id": "doc:TurnOffAction",
+      "subClassOf": "ControlAction",
+      "label": { "@value": "Turn off", "@language": "en" }
+    }
+  ]
+}
